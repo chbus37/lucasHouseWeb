@@ -1,1 +1,421 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --color-principal: #4a79af;
+  --color-secundario: #ef7643;
+  --color-fondo: #fff;
+  --color-borde: #ccc;
+  --color-enlace: #007bff;
+  --color-enlace-hover: #0056b3;
+  --color-sombra: rgba(0, 0, 0, 0.1);
+  --espaciado: 20px;
+}
+
+/* Estilos Generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+
+h2 {
+  font-size: 2.7em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.25em;
+}
+
+.color-acento {
+  color: var(--color-secundario);
+}
+
+button {
+  font-size: 1.5em;
+  font-weight: bold;
+  background-color: var(--color-secundario);
+  color: white;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: 1px solid black;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  transition: all 400ms ease;
+}
+
+button:hover {
+  background: #fff;
+  border: 2px solid var(--color-secundario);
+  color: var(--color-secundario);
+}
+
+header {
+  background-color: rgb(245, 245, 245);
+}
+
+header .logo {
+  margin: 0;
+  width: 300px;
+  height: 300px;
+  padding: 25px 30px;
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+header a {
+  text-decoration: none;
+  padding: 5px 12px;
+  font-weight: bold;
+  color: black;
+  transition: all 300ms ease;
+}
+
+header a:hover {
+  background-color: var(--color-secundario);
+  border-radius: 10px;
+}
+
+/* Hero Section */
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 90vh;
+  color: #fff;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(/asssets/catalina-sin.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#hero h1 {
+  color: #fff;
+}
+
+/* Seccion Sobre Nosotros */
+
+#sobre-nosotros .container {
+  text-align: center;
+  padding: 200px 12px;
+}
+
+#modulos h2 {
+  text-align: center;
+}
+
+.container-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 20px;
+  width: 90%;
+  max-width: 300px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Seccion Modulos */
+
+/* Modulos Section */
+.container-card {
+  width: 100%;
+  display: flex;
+  max-width: 1100px;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.card {
+  width: 100%;
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+
+.card img {
+  width: 100%;
+  min-height: 300px;
+}
+
+.card .contenido {
+  padding: 15px;
+  text-align: center;
+}
+
+.card .contenido p {
+  line-height: 1.5;
+  color: #6a6a6a;
+}
+
+.card .contenido h3 {
+  margin-bottom: 15px;
+}
+
+.card .contenido a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  margin-top: 10px;
+  color: #2fb4cc;
+  border: 1px solid #2fb4cc;
+  border-radius: 4px;
+  transition: all 400ms ease;
+}
+.card .contenido a:hover {
+  background: #2fb4cc;
+  color: black;
+  border: 1px solid black;
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+/* Seccion Caracteristicas */
+
+#caracteristicas {
+  background-color: var(--color-principal);
+  color: #fff;
+  text-align: center;
+}
+
+#caracteristicas h2 {
+  margin-top: 0;
+  font-size: 3.3em;
+}
+
+#caracteristicas .container {
+  padding: 150px 12px;
+}
+
+#caracteristicas p {
+  display: none;
+}
+
+#caracteristicas .carta {
+  background-position: center center;
+  background-size: cover;
+  padding: 50px;
+  margin: 20px;
+  border-radius: 15px;
+}
+
+.carta:first-child {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(/asssets/enseco.JPEG);
+}
+
+.carta:nth-child(2) {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(/asssets/aislacion.JPEG);
+}
+
+.carta:last-child {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(/asssets/envios.jpg);
+}
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 90vh;
+  color: #fff;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(/asssets/interior-valentina.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.contacto h2 {
+  font-size: 5vw;
+}
+
+.contacto button {
+  font-size: 3vw;
+}
+
+footer {
+  background-color: rgb(230, 230, 230);
+}
+
+footer p {
+  margin: 0;
+  padding: 12px;
+  color: rgb(100, 100, 100);
+}
+
+footer .container {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header nav {
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 30px;
+  }
+
+  #hero h1 {
+    font-size: 5em;
+  }
+
+  #sobre-nosotros .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #sobre-nosotros .texto {
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #sobre-nosotros .img-container {
+    background-image: url(/asssets/lucas\ house\ staff.jpeg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 12px -3px rgba(0, 0, 0, 0.75);
+  }
+
+  #caracteristicas .cartas {
+    display: flex;
+    justify-content: center;
+  }
+
+  #caracteristicas p {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  #caracteristicas h3 {
+    margin-top: 0;
+  }
+
+  #caracteristicas .carta {
+    padding: 50px;
+  }
+
+  .contacto h2 {
+    font-size: 5em;
+  }
+
+  .contacto button {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 768px) {
+  #modulos {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container-card {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+  }
+}
